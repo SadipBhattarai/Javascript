@@ -44,20 +44,40 @@ Logic
 Below 60%: Fail
 */
 
-const mark = +prompt("Enter your marks");
-switch (true) {
-  case mark >= 80 && mark <= 100:
-    alert("Distinction");
-    break;
-  case mark < 80 && mark >= 70:
-    alert("First Division");
-    break;
-  case mark < 70 && mark >= 60:
-    alert("Second Division");
-    break;
-  case mark < 60:
-    alert("Fail");
-    break;
-  default:
-    alert("Invalid Number");
-}
+// const mark = +prompt("Enter your marks");
+// switch (true) {
+//   case mark >= 80 && mark <= 100:
+//     alert("Distinction");
+//     break;
+//   case mark < 80 && mark >= 70:
+//     alert("First Division");
+//     break;
+//   case mark < 70 && mark >= 60:
+//     alert("Second Division");
+//     break;
+//   case mark < 60:
+//     alert("Fail");
+//     break;
+//   default:
+//     alert("Invalid Number");
+// }
+
+// const gender = prompt("Enter the gender");
+// gender === "m" ? alert("Male") : alert("Female");
+
+// Write a js program to ask user their drink order
+// (tea, coffee, Milk ,water, coke)
+// alert => You have ordered...
+
+const drink = prompt("Enter the drink you want to order");
+drink == "tea"
+  ? alert("You ordered Tea.")
+  : drink == "coffee"
+  ? alert("You ordered Coffee.")
+  : drink == "milk"
+  ? alert("You ordered Milk.")
+  : drink == "water"
+  ? alert("You ordered Water.")
+  : drink == "coke"
+  ? alert("You ordered Coke.")
+  : alert(`You have ordered nothing.`);
